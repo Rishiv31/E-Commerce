@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a8dadc;
+}
+.main .product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.main .product .image{
+    flex-basis: 40%;
+    background:white;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    transform: scale(1.07);
+    position: relative;
+
+}
+.main .product .image img{
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+
+}
+.main .product .product-details{
+    flex-basis: 53%;
+    background: white;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    padding: 40px 30px 40px 40px;
+}
+.main .product .image .control .button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(255,255,255,0.5);
+    display: block;
+    margin-bottom: 10px;
+}
+.main .product .product-details h2{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color:#011627;
+}
+.main .product .product-details h3{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 10px;
+    color:#011627;
+}
+
+.main .product .product-details h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color:#f72585;
+    margin-bottom: 10px;
+}
+.main .product .product-details .details ul{
+    font-size: 14px;
+    font-weight: 500;
+    color:#011627;
+    line-height: 25px;
+}
+
+
+
+.main .product .product-details .varient .form .select-varient .h3{
+    width: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color:#011627;
+    margin-right: 30px;
+
+}
+.main .product .product-details .varient .form .select-varient label{
+    display: flex;
+    align-items: center;
+    
+}
+
+.main .product .product-details .varient .form .select-varient label span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color:#011627
+}
+
+
+.main .product .product-details .color .form .select-color .h3{
+    width: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color:#011627;
+    margin-right: 30px;
+
+}
+.main .product .product-details .color .form .select-color label{
+    display: flex;
+    align-items: center;
+    
+}
+
+.main .product .product-details .color .form .select-color label span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color:#011627
+}
+.main .product .product-details .quantity{
+    margin-bottom: 50px;
+}
+.main .product .product-details .quantity .select-quantity h3{
+    width: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color:#011627;
+    margin-right: 30px;
+
+}
+
+.main .product .product-details .quantity .select-quantity input{
+    background:grey;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    border-radius: 12px;
+    width: 50px;
+}
+.main .product .product-details .sub-btn{
+    padding: 0 30px;
+}
+.main .product .product-details .sub-btn .submit{
+    width:100%;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background: #0077b6;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+    transition: .4s linear;
+
+}
+.main .product .product-details .sub-btn .submit:hover{
+    background:#00b4d8;
+
+}
+.main .product .product-details .sub-btn .submit::before{
+    content: ' ';
+    position: absolute;
+    left:-100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    transform:rotate(-45deg)
+}
+.main .product .product-details .sub-btn .submit:hover::before{
+    animation: light .4s linear forwards;
+@keyframes light{
+    0%{
+        left: -100%
+    }
+    100%{
+        left: -100%
+    }
+    
+}
+}
